@@ -1,0 +1,116 @@
+Interpolation : is called Expression 
+=======================================
+Syntax:
+
+	{ 2*3}
+	{ 23/3 }	
+
+Render JS  variable in template/component
+===========================
+Syntax:
+
+	 render()
+    	{	
+		var data="test data";
+		
+
+		...
+		...
+		return(
+
+			<div>
+				<h1> { data } </h1>
+			</div>
+		)
+		
+	}
+
+
+State and props
+==========================
+State : is global workspace/memory where data can be stored within class
+------------------
+
+constructor: is a function with reserved name(constructor) which invoke/call/execute automatically when object will create/component will inialize
+
+Syntax:
+
+class  Header extends Component{ 
+	
+	constructor()
+	{
+
+		super();//here super is inbuilt function which invoke 					//to parent class constructor, and Component is 				//parent class here 
+
+		this.state={
+				id:111, 
+				name:'raman',
+				gender:'male'
+			   }
+
+
+	}
+
+}
+
+read in render:
+----
+ render()
+    	{	
+		
+		return(
+
+			<div>
+				Id: <h1> { this.state.id } </h1>
+				Name: <h1> { this.state.name } </h1>
+			</div>
+		)
+		
+	}
+
+props	: is also workspace of data like state 
+=================
+Diff:
+	-> props is read only 
+	-> data can be send/pass from parent component to child component
+	
+
+Body.js
+-------------------
+	
+render()
+    	{	
+		
+		return(
+
+			<div>
+				<Product dataName={this.state.name} />
+			</div>
+		)
+		
+	}
+
+
+
+Product.js
+-----------------
+render()
+    	{	
+		
+		return(
+
+			<div>
+				<h1> {this.props.dataName } </h1>
+			</div>
+		)
+		
+	}
+
+
+	
+
+Events
+===================
+
+
+

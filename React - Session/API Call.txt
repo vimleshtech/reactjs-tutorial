@@ -1,0 +1,22 @@
+WebService: SOAP (String, XML) 	
+API: Rest : (XML, JSON)
+	-Stateless 
+		
+
+Promise : is inbuilt library which given by ES5
+	
+	: fetch() : is inbuilt method to invoke to API 
+	Syntax:
+		fetch('api')
+		.then(parse)
+		.then(render)
+
+
+
+	
+
+
+	
+ 
+ 
+
